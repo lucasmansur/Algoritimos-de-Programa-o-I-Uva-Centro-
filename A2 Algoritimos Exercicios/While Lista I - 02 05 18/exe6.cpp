@@ -1,6 +1,6 @@
-/**6.	Escrever um programa que receba um nome para que conte o número de vogais existentes nele.
-O programa deverá imprimir o número total de caracteres do nome, quantas vogais e a 
-respectiva porcentagem das vogais em relação ao total de caracteres.**/
+/**6.	Escrever um programa que receba um nome para que conte o nÃºmero de vogais existentes nele.
+O programa deverÃ¡ imprimir o nÃºmero total de caracteres do nome, quantas vogais e a 
+respectiva porcentagem das vogais em relaÃ§Ã£o ao total de caracteres.**/
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -29,7 +29,7 @@ i++;}
 
 printf("Quantidade de vogais:  %i\nQuantidade de Caracteres:  %i\n\n\n",vog,num);
 
-perc = (vog / num)*100;
+perc = (vog *100)/num;
 
 printf("Porcentagem de Vogais :  %f\n\n",perc);
 
