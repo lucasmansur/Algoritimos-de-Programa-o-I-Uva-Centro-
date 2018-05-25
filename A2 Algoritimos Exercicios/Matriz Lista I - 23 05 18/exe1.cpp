@@ -14,7 +14,8 @@ main() {
 
 
 	/*-------------------------------------------------------------------------------------------------------------------------------------------------------------
-	a) Quando construimos esse laço de repetição desta maneira, o programa ira preencher a matriz começando pela primeira linha e subseguentemente suas colulas
+a) Quando construimos esse laço de repetição desta maneira, o programa ira preencher a matriz começando
+pela primeira linha e subseguentemente suas colulas
 	exemplo =         1 2 3 4
 			  5 6 7 8
 			  9 1 1 1
