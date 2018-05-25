@@ -1,5 +1,5 @@
 /*01) Criar um algoritmo para preencher
-com valores numÈricos uma matriz 4 x 4
+com valores num√©ricos uma matriz 4 x 4
 e que em seguida exiba na tela os elementos da diagonal principal.*/
 
 
@@ -14,15 +14,15 @@ main() {
 
 
 	/*-------------------------------------------------------------------------------------------------------------------------------------------------------------
-	a) Quando construimos esse laÁo de repetiÁ„o desta maneira, o programa ira preencher a matriz comeÁando pela primeira linha e subseguentemente suas colulas
-	exemplo = 1 2 3 4
+	a) Quando construimos esse la√ßo de repeti√ß√£o desta maneira, o programa ira preencher a matriz come√ßando pela primeira linha e subseguentemente suas colulas
+	exemplo =         1 2 3 4
 			  5 6 7 8
 			  9 1 1 1
 			  8 8 8 8
 
-	b) podemos inverter essa operaÁ„o simplesmente alterando as variaveis do primeiro for
-	pelo segundo sendo assim a matriz se preencher· comeÁando pelas colunas ao inves das linhas.
-	vide exemplo=  1 5 9 8
+	b) podemos inverter essa opera√ß√£o simplesmente alterando as variaveis do primeiro for
+	pelo segundo sendo assim a matriz se preencher√° come√ßando pelas colunas ao inves das linhas.
+	vide exemplo=              1 5 9 8
 				   2 6 1 8
 				   3 7 1 8
 				   4 8 1 8
@@ -30,11 +30,11 @@ main() {
 	---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-	for(l=0; l<=3; l++) { //for para o laÁo repetitivo das linhas
+	for(l=0; l<=3; l++) { //for para o la√ßo repetitivo das linhas
 
-		for(c=0; c<=3; c++) {// for para o laÁo repetitivo das colunas
+		for(c=0; c<=3; c++) {// for para o la√ßo repetitivo das colunas
 
-			printf("Digite o numero representativo da matriz aonde sua linha È %d e coluna %d:  \n",l+1,c+1);
+			printf("Digite o numero representativo da matriz aonde sua linha √© %d e coluna %d:  \n",l+1,c+1);
 			scanf("%d",&mat[l][c]); //Aqui preenchemos a matriz
 
 
