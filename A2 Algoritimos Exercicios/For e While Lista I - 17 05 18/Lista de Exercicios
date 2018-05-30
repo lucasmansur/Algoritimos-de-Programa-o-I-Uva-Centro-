@@ -1,0 +1,27 @@
+ALGORITMOS E PROGRAMAÇÃO - UNIDADE CENTRO
+PROFESSOR: CLAUDIO FICO
+
+
+1.	Fazer um programa para que o usuário possa digitar umapalavra e imprimir as 4 primeiras letras da palavra.
+
+2.	Fazer um programa para que o usuário possa digitar umapalavra e imprimir as 4 últimas letras da palavra
+
+3.	Fazer um programa para que o usuário possa digitar um nome e o programa deverá exibir a letra e a respectiva posição.
+
+4.	Fazer um programa para exibir na tela todos os números divisíveis por 4 que sejam menores que 200.
+
+5.	Fazer um programa para que o usuário digite uma frase com no máximo 40 letras.
+Se o tamanho for maior que 40, dar uma mensagem de erro e solicitar nova digitação.
+Exibir na a frase na posição vertical (uma letra em baixo da outra).
+
+6.	Escrever um programa que receba um nome para que conte o número de vogais existentes nele.
+O programa deverá imprimir o número total de caracteres do nome, quantas vogais e a respectiva 
+porcentagem das vogais em relação ao total de caracteres.
+
+7.	Fazer um programa para que o usuário digite uma palavra que tenha a quantidade de caracteres ímpares.
+Se for par, exibir mensagem de erro e retornar para nova digitação.
+
+8.	O programa deverá exibir o caractere do meio da palavra digitada.
+Para isso só poderá ser aceiro palavras com números ímpares de caracteres.
+
+
