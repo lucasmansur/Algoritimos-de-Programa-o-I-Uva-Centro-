@@ -1,0 +1,172 @@
+ALGORITMOS E PROGRAMAÇÃO – WHILE VERSÃO II - UNIDADE CENTRO - PROFESSOR: CLAUDIO FICO
+
+
+
+1.	Fazer um programa que mostre todos os números ímpares de 1 até 100.
+
+#include <stdio.h>
+
+intmain()
+{
+intcount = 1;
+
+while(count<= 100)
+        {
+if(count%2 != 0)
+printf("%d ",count);
+
+count++;
+        }
+}
+
+
+2.	Fazer um programa que mostre todos os números pares de 1 até 100 em prdem decrescente.
+
+intmain()
+{
+intcount = 99;
+
+while(count>= 0)
+        {
+if(count%2 == 0)
+printf("%d ",count);
+
+count--;
+        }
+}
+
+
+ 
+3.	Fazer um programa que recebe um número inteiro qualquer e mostre os números pares e ímpares
+(separados, em duas colunas), de 1 até esse número inteiro.O número digitado não pode ser zero
+ e nem negativo. Caso seja, mensagem de erro e retorna para nova digitação.
+
+#include <stdio.h>
+main()
+{
+int num,count = 1;
+
+printf("Digite um numero: ");
+scanf("%d", &num);
+
+printf("IMPARES \tPARES\n");
+
+while(count<= num)
+        {
+if(count%2 == 1)
+printf("    %d \t",count);
+else
+printf("    \t %d\n", count);
+
+count++;
+        }
+}
+
+
+4.	Fazer um programa que pergunte ao usuário quantos alunos tem na sala dele.
+O número digitado não pode ser zero e nem negativo. Caso seja, mensagem de erro e retorna para nova digitação.
+Em seguida, através de um “while”, pede ao usuário para que entre com as notas de todos os alunos da sala, um por vez.
+Por fim, o programa deve mostrar a média, aritmética, da turma.
+
+#include <stdio.h>
+main()
+{
+int total,count = 1;
+float nota,soma=0;
+
+printf("Numero de alunos na sala: ");
+scanf("%d",&total);
+
+while(count<= total)
+        {
+printf("Nota do aluno %d: ",count);
+scanf("%f",&nota);
+
+soma = soma + nota;
+
+count++;
+        }
+
+printf("Media da turma: %.2f", soma/total);
+}
+
+
+5.	Fazer um programa que solicite 10 números ao usuário, através de um “while”,
+e ao final mostre os dois maiores números digitados pelo usuário.
+
+#include <stdio.h>
+ 
+main()
+{
+int maior,
+segundo_maior,
+num,
+count=3;
+ 
+printf("Digite o numero 1: "); 
+	scanf("%d", &maior);
+printf("Digite o numero 2: "); 
+	scanf("%d", &num);
+ 
+if(maior > num)
+segundo_maior = num;
+else
+        {
+segundo_maior = maior;
+maior = num;
+        }
+ 
+ 
+while (count<= 10)
+        {
+printf("Digite o numero %d: ", count);
+scanf("%d", &num);
+ 
+if(num > maior)
+            {
+segundo_maior = maior;
+maior = num;
+            }
+else
+if(num >segundo_maior)
+segundo_maior = num;
+ 
+count++;
+        }
+ 
+printf("Maior: %d", maior);
+printf("Segundo maior: %d", segundo_maior);
+ 
+}
+
+
+6.	Fazer um programa que pergunta um número ao usuário, e mostra sua tabuada completa (de 1 até 10).
+O número digitado não pode ser zero. Caso seja, mensagem de erro e retorna para nova digitação.
+
+#include <stdio.h>
+
+main()
+{
+intnum,
+count=1;
+
+printf("Digite um numero: ");
+scanf("%d", &num);
+
+while(count<= 10)
+        {
+printf("%d * %d = %d\n", num, count, num*count);
+count++;
+        }
+}
+
+
+7.	Fazer um programa para que o usuário digite uma palavra de até 12 posições.
+Caso a palavra tenha mais do que 12 caracteres, mensagem de erro e retorna para nova digitação.
+O programa deverá apenas imprimir os caracteres com índice de valor ímpar.
+
+
+8.	Fazer um programa para que o usuário digite uma palavra de até 15 posições.
+Caso a palavra tenha menos do que 6 caracteres e mais do que 15 caracteres, mensagem de erro e retorna para nova digitação.
+O programa deverá apenas imprimir os caracteres com índice de valor par. Ao final exibir a média dos índices pares computados.
+
