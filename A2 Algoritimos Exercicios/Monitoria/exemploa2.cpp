@@ -1,41 +1,33 @@
-/*FaÁa um programa para que o usuario digite 8 numeros
+/*Fa√ßa um programa para que o usuario digite 8 numeros
 sequanciais, iniciando do 0 ao 7
-
-a entrada de dados n„o pode passar do numero 7 (o programa n„o pode acietar numeros menores que 0 e  nem maiores de 7).
-
-caso oo numero digitado n„o tenha obedecido a sequencia de digitaÁ„o. o programa dever· exibir uma mensagem de erro e retornar para nova
-digitaÁ„o
-
-esses numeros dever„o ser armazenados em uma matriz de 2x4 ( duas linhas 4 colunas )  da seguinte forma:
+a entrada de dados n√£o pode passar do numero 7 (o programa n√£o pode acietar numeros menores que 0 e  nem maiores de 7).
+caso oo numero digitado n√£o tenha obedecido a sequencia de digita√ß√£o. o programa dever√° exibir uma mensagem de erro e retornar para nova
+digita√ß√£o
+esses numeros dever√£o ser armazenados em uma matriz de 2x4 ( duas linhas 4 colunas )  da seguinte forma:
 * Os numeros pares. Obrigatoriamente. na primeira linha;
 *Os numeros impares, obrigatoriamente  na segunda linha;
+	Apos este preenchimento de informa√ß√µes na matriz, o programa dever√° imprimir para o usuario:
 
-
-	Apos este preenchimento de informaÁıes na matriz, o programa dever· imprimir para o usuario:
-	
 - O somatorio de todos os numeros pares da primeira linha:
 - o somatorio de todos os numeros impares da segunda linha
 - o somatorio de todos os numeros da primeira , segunda , terceira e quarta coluna;
-
 exemplo :
-
-0 2 4 6 
+0 2 4 6
 1 3 5 7
-
-n„o ser· aceito forÁar gravaÁ„o da informaÁ„o na matriz atravez da identificaÁ„o direta do numero */
+n√£o ser√° aceito for√ßar grava√ß√£o da informa√ß√£o na matriz atravez da identifica√ß√£o direta do numero */
 
 #include<stdio.h>
 #include<stdlib.h>
 
 main(){
 	int mat[2][4];
-	int l=0, c=0;
-	
-	
+	int l=0, c=0,somap=0,somai=0,somat=0;
+
+
 	for(l=0;l<2;l++) {
 		for(c=0;c<4;c++){
 			home:
-			printf("Indique o indice para a matriz referente a posiÁ„o Linha = %d / Coluna = %d ",l+1,c+1);
+			printf("Indique o indice para a matriz referente a posi√ß√£o Linha = %d / Coluna = %d ",l+1,c+1);
 			if(l==0){
 			scanf("%d",&mat[l][c]);
 			if(mat[l][c]<0 || mat[l][c]>7){
@@ -46,6 +38,7 @@ main(){
 				puts("Erro-002");
 				goto home;
 				}
+				somap+=mat[l][c];
 			}
 			//////////////////////////////////////
 			if(l==1){
@@ -58,22 +51,28 @@ main(){
 				puts("Erro-003");
 				goto home;
 				}
+				somai+=mat[l][c];
 			}
+			somat+=mat[l][c];
 		}
+
 	}
 	puts("\n\n");
 	for (l=0;l<2;l++){
 		for(c=0;c<4;c++){
 			printf("%d",mat[l][c]);
-			
+
 		}
 	puts("\n");
 	}
-	
+
+	puts("\nSoma dos numeros pares: ");
+	printf("%d",somap);
+
+	puts("\nSoma dos numeros impares: ");
+	printf("%d",somai);
+
+	puts("\nSoma de todos os numeros: ");
+	printf("%d",somat);
+
 }
-
-
-
-
-
-
